@@ -1,0 +1,12 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"Q3,Q5,Q1,Q22,Q21,Q20,Q16,Q15,Q14,Q10,Q9,Q8";"SOT-23";12;"MMBT3904";;;
+2;"U1,U4,U3,U2";"DFN-8-1EP_3x3mm_P0.5mm_EP1.66x2.38mm";4;"PIC12LF1501-ISN";;;
+3;"R18,R13,R8,R28,R27,R26,R20,R19,R16,R6,R5,R4";"R_0805_2012Metric";12;"2.4";;;
+4;"R17,R12,R7,R25,R24,R23,R15,R14,R11,R3,R2,R1";"R_0603_1608Metric";12;"47k";;;
+5;"Q6,Q4,Q2,Q25,Q24,Q23,Q19,Q18,Q17,Q13,Q12,Q11";"SOT-23";12;"DMN2041L";;;
+6;"J1,J4,J3,J2";"PinHeader_1x03_P1.00mm_Vertical";4;"Conn_01x03_Male";;;
+7;"D1,D4,D3,D2";"L1MC-RGB3080";4;"L1MC-Breakout";;;
+8;"U5";"SOT_23_3";1;"AP2127N3-1.2";;;
+9;"Q7";"SOT-23";1;"Si2319CDS";;;
+10;"C2,C1";"C_0603_1608Metric";2;"22u";;;
+11;"J6,J5";"JST_VH_B3P-VH-B_1x03_P3.96mm_Vertical";2;"Conn_01x03_Male";;;

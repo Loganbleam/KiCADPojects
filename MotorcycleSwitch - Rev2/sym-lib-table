@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name MotorcycleSwitch-rescue)(type Legacy)(uri ${KIPRJMOD}/MotorcycleSwitch-rescue.lib)(options "")(descr ""))
+)

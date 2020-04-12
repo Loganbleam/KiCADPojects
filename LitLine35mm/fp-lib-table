@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name LitLine35mm)(type KiCad)(uri ${KIPRJMOD}/LitLine35mm.pretty)(options "")(descr ""))
+)

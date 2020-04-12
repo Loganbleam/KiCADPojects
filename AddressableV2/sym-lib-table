@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name AddressableLED-rescue)(type Legacy)(uri ${KIPRJMOD}/AddressableLED-rescue.lib)(options "")(descr ""))
+  (lib (name AOZ2261AQI)(type Legacy)(uri ${KIPRJMOD}/AOZ2261AQI.lib)(options "")(descr ""))
+  (lib (name AddressableLEDBJT)(type Legacy)(uri ${KIPRJMOD}/AddressableLEDBJT.lib)(options "")(descr ""))
+)

@@ -1,0 +1,178 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+WS2812B
+WS2812B-NARROW
+LED3535
+$EndINDEX
+$MODULE WS2812B
+Po 0 0 0 15 00000000 00000000 ~~
+Li WS2812B
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 3.8989 0.0381 0.64 0.64 900 0.05 N V 21 "WS2812B"
+T1 0 0 1 0.9 0 0.05 N H 21 "VAL**"
+DS 2.5 2.5 -2.5 2.5 0.127 21
+DS -2.5 2.5 -2.5 -1.6 0.127 21
+DS -2.5 -1.6 -2.5 -2.5 0.127 21
+DS -2.5 -2.5 -1.6 -2.5 0.127 21
+DS -1.6 -2.5 2.5 -2.5 0.127 21
+DS 2.5 -2.5 2.5 2.5 0.127 21
+DS -2.5 -1.6 -1.6 -2.5 0.127 21
+DC 0 0 1.72046 0 0.127 21
+DS -1.6 -2.5 -1.3 -2.8 0.127 21
+DS -1.3 -2.8 -1.7 -3.2 0.127 21
+DS -1.7 -3.2 -2.5 -2.5 0.127 21
+$PAD
+Sh "1VDD" R 1.5 0.9 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.45 1.65
+$EndPAD
+$PAD
+Sh "2DOUT" R 1.5 0.9 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.45 -1.65
+$EndPAD
+$PAD
+Sh "4DIN" R 1.5 0.9 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.45 1.65
+$EndPAD
+$PAD
+Sh "3GND" R 1.5 0.9 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.45 -1.65
+$EndPAD
+$EndMODULE WS2812B
+$MODULE WS2812B-NARROW
+Po 0 0 0 15 00000000 00000000 ~~
+Li WS2812B-NARROW
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 3.8989 0.0381 0.64 0.64 900 0.05 N V 21 "WS2812B-NARROW"
+T1 0 0 1 0.9 0 0.05 N H 21 "VAL**"
+DS 2.5 2.5 -2.5 2.5 0.127 21
+DS -2.5 2.5 -2.5 -1.6 0.127 21
+DS -2.5 -1.6 -2.5 -2.5 0.127 21
+DS -2.5 -2.5 -1.6 -2.5 0.127 21
+DS -1.6 -2.5 2.5 -2.5 0.127 21
+DS 2.5 -2.5 2.5 2.5 0.127 21
+DS -2.5 -1.6 -1.6 -2.5 0.127 21
+DC 0 0 1.72046 0 0.127 21
+DS -1.6 -2.5 -1.25 -2.85 0.127 21
+DS -1.25 -2.85 -1.7 -3.3 0.127 21
+DS -1.7 -3.3 -2.5 -2.5 0.127 21
+$PAD
+Sh "1VDD" R 1.3 1.2 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.35 1.65
+$EndPAD
+$PAD
+Sh "2DOUT" R 1.3 1.2 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.35 -1.65
+$EndPAD
+$PAD
+Sh "4DIN" R 1.3 1.2 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.35 1.65
+$EndPAD
+$PAD
+Sh "3GND" R 1.3 1.2 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.35 -1.65
+$EndPAD
+$EndMODULE WS2812B-NARROW
+$MODULE LED3535
+Po 0 0 0 15 00000000 00000000 ~~
+Li LED3535
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 -0.2794 -2.5654 0.64 0.64 0 0.05 N V 21 "LED3535"
+T1 -0.762 2.3368 0.32 0.32 0 0.05 N V 21 "VAL**"
+DS -1.75 -1.75 1.75 -1.75 0.127 27
+DS 1.75 -1.75 1.75 1.75 0.127 27
+DS 1.75 1.75 -1.75 1.75 0.127 27
+DS -1.75 1.75 -1.75 -1.75 0.127 27
+DC 0 0 1.4 0 0.127 27
+DS -1.9 -1.6 -1.9 -1.9 0.127 21
+DS -1.9 -1.9 1.9 -1.9 0.127 21
+DS 1.9 -1.9 1.9 -1.6 0.127 21
+DS -1.9 1.6 -1.9 1.9 0.127 21
+DS -1.9 1.9 1.9 1.9 0.127 21
+DS 1.9 1.9 1.9 1.6 0.127 21
+DP 0 0 0 0 4 0.127 21
+Dl -1.905 -1.905
+Dl -1.905 -1.524
+Dl -1.524 -1.524
+Dl -1.143 -1.905
+$PAD
+Sh "1" R 0.85 1 0 0 900
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.75 -0.875
+$EndPAD
+$PAD
+Sh "4" R 0.85 1 0 0 900
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.75 -0.875
+$EndPAD
+$PAD
+Sh "2" R 0.85 1 0 0 900
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.75 0.875
+$EndPAD
+$PAD
+Sh "3" R 0.85 1 0 0 900
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.75 0.875
+$EndPAD
+$EndMODULE LED3535

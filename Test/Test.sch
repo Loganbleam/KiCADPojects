@@ -1,0 +1,144 @@
+EESchema Schematic File Version 4
+LIBS:Test-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "STM32 Value Line Discovery - Shiled board"
+Date "20 oct 2012"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5D282ABA
+P 2700 2550
+F 0 "R?" V 2907 2550 50  0000 C CNN
+F 1 "10k" V 2816 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2630 2550 50  0001 C CNN
+F 3 "~" H 2700 2550 50  0001 C CNN
+	1    2700 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D2839C2
+P 4450 3100
+F 0 "R?" H 4520 3146 50  0000 L CNN
+F 1 "10k" H 4520 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4380 3100 50  0001 C CNN
+F 3 "~" H 4450 3100 50  0001 C CNN
+	1    4450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D28439C
+P 3700 2000
+F 0 "R?" V 3907 2000 50  0000 C CNN
+F 1 "20k" V 3816 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3630 2000 50  0001 C CNN
+F 3 "~" H 3700 2000 50  0001 C CNN
+	1    3700 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Amplifier_Operational:LM741 U?
+U 1 1 5D288013
+P 3550 2650
+F 0 "U?" H 3894 2604 50  0000 L CNN
+F 1 "LM741" H 3894 2695 50  0000 L CNN
+F 2 "Package_SO:HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.1mm" H 3600 2700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 3700 2800 50  0001 C CNN
+	1    3550 2650
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D28FEF6
+P 3450 2350
+F 0 "#PWR?" H 3450 2100 50  0001 C CNN
+F 1 "GND" H 3455 2177 50  0000 C CNN
+F 2 "" H 3450 2350 50  0001 C CNN
+F 3 "" H 3450 2350 50  0001 C CNN
+	1    3450 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D291D0B
+P 3450 2950
+F 0 "#PWR?" H 3450 2800 50  0001 C CNN
+F 1 "+5V" H 3465 3123 50  0000 C CNN
+F 2 "" H 3450 2950 50  0001 C CNN
+F 3 "" H 3450 2950 50  0001 C CNN
+	1    3450 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 2550 3100 2550
+Wire Wire Line
+	3100 2550 3100 1950
+Wire Wire Line
+	3100 1950 3450 1950
+Wire Wire Line
+	3450 1950 3450 2000
+Wire Wire Line
+	3450 2000 3550 2000
+Connection ~ 3100 2550
+Wire Wire Line
+	3100 2550 3250 2550
+Wire Wire Line
+	3850 2000 4450 2000
+Wire Wire Line
+	4450 2000 4450 2650
+Wire Wire Line
+	3850 2650 4450 2650
+Connection ~ 4450 2650
+Wire Wire Line
+	4450 2650 4450 2950
+$Comp
+L power:+5V #PWR?
+U 1 1 5D2A4497
+P 2300 2650
+F 0 "#PWR?" H 2300 2500 50  0001 C CNN
+F 1 "+5V" H 2315 2823 50  0000 C CNN
+F 2 "" H 2300 2650 50  0001 C CNN
+F 3 "" H 2300 2650 50  0001 C CNN
+	1    2300 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2650 2500 2550
+Wire Wire Line
+	2500 2550 2550 2550
+Wire Wire Line
+	2300 2650 2500 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5D2A7FB1
+P 3250 2750
+F 0 "#PWR?" H 3250 2500 50  0001 C CNN
+F 1 "GND" H 3255 2577 50  0000 C CNN
+F 2 "" H 3250 2750 50  0001 C CNN
+F 3 "" H 3250 2750 50  0001 C CNN
+	1    3250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D2AA4D7
+P 4450 3250
+F 0 "#PWR?" H 4450 3000 50  0001 C CNN
+F 1 "GND" H 4455 3077 50  0000 C CNN
+F 2 "" H 4450 3250 50  0001 C CNN
+F 3 "" H 4450 3250 50  0001 C CNN
+	1    4450 3250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
