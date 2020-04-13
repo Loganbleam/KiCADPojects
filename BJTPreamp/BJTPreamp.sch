@@ -1,0 +1,414 @@
+EESchema Schematic File Version 4
+LIBS:BJTPreamp-cache
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:MMBT3904 Q1
+U 1 1 5DEAF56C
+P 5400 3700
+F 0 "Q1" H 5591 3746 50  0000 L CNN
+F 1 "MMBT3904" H 5591 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5600 3625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5400 3700 50  0001 L CNN
+	1    5400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DEB3B47
+P 5500 2300
+F 0 "R3" V 5293 2300 50  0000 C CNN
+F 1 "R" V 5384 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5430 2300 50  0001 C CNN
+F 3 "~" H 5500 2300 50  0001 C CNN
+	1    5500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5DEB3F84
+P 5500 5450
+F 0 "R6" V 5293 5450 50  0000 C CNN
+F 1 "R" V 5384 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5430 5450 50  0001 C CNN
+F 3 "~" H 5500 5450 50  0001 C CNN
+	1    5500 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5DEB4B3B
+P 6700 3650
+F 0 "C2" H 6815 3696 50  0000 L CNN
+F 1 "C" H 6815 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6738 3500 50  0001 C CNN
+F 3 "~" H 6700 3650 50  0001 C CNN
+	1    6700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1750 5500 2150
+Wire Wire Line
+	5500 5600 5500 5800
+Wire Wire Line
+	5900 5600 5900 5800
+$Comp
+L power:GND #PWR0101
+U 1 1 5DEB6FF8
+P 5500 5800
+F 0 "#PWR0101" H 5500 5550 50  0001 C CNN
+F 1 "GND" H 5505 5627 50  0000 C CNN
+F 2 "" H 5500 5800 50  0001 C CNN
+F 3 "" H 5500 5800 50  0001 C CNN
+	1    5500 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5DEB7488
+P 5900 5800
+F 0 "#PWR0102" H 5900 5550 50  0001 C CNN
+F 1 "GND" H 5905 5627 50  0000 C CNN
+F 2 "" H 5900 5800 50  0001 C CNN
+F 3 "" H 5900 5800 50  0001 C CNN
+	1    5900 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 5300 5900 5200
+Connection ~ 5500 5200
+Wire Wire Line
+	5500 5200 5500 5300
+$Comp
+L power:GND #PWR0103
+U 1 1 5DEB7D4C
+P 6700 5850
+F 0 "#PWR0103" H 6700 5600 50  0001 C CNN
+F 1 "GND" H 6705 5677 50  0000 C CNN
+F 2 "" H 6700 5850 50  0001 C CNN
+F 3 "" H 6700 5850 50  0001 C CNN
+	1    6700 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5DEBA004
+P 8300 3550
+F 0 "J2" H 8272 3432 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 8272 3523 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 8300 3550 50  0001 C CNN
+F 3 "~" H 8300 3550 50  0001 C CNN
+	1    8300 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3650 8100 5850
+$Comp
+L power:GND #PWR0104
+U 1 1 5DEBB6F4
+P 8100 5850
+F 0 "#PWR0104" H 8100 5600 50  0001 C CNN
+F 1 "GND" H 8105 5677 50  0000 C CNN
+F 2 "" H 8100 5850 50  0001 C CNN
+F 3 "" H 8100 5850 50  0001 C CNN
+	1    8100 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 5200 5500 5200
+Wire Wire Line
+	8100 3550 8100 1750
+Wire Wire Line
+	3850 3700 3900 3700
+$Comp
+L Device:C C3
+U 1 1 5DF8E6C5
+P 3700 3700
+F 0 "C3" V 3448 3700 50  0000 C CNN
+F 1 "C" V 3539 3700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3738 3550 50  0001 C CNN
+F 3 "~" H 3700 3700 50  0001 C CNN
+	1    3700 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 2600 2300 2600
+Wire Wire Line
+	2450 2500 2300 2500
+$Comp
+L Device:R R4
+U 1 1 5DEB2F30
+P 1350 2450
+F 0 "R4" V 1143 2450 50  0000 C CNN
+F 1 "R" V 1234 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1280 2450 50  0001 C CNN
+F 3 "~" H 1350 2450 50  0001 C CNN
+	1    1350 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1750 4300 1750
+Connection ~ 3900 1750
+Wire Wire Line
+	3900 2150 3900 2250
+$Comp
+L power:GND #PWR0105
+U 1 1 5DEB5689
+P 3900 2250
+F 0 "#PWR0105" H 3900 2000 50  0001 C CNN
+F 1 "GND" H 3905 2077 50  0000 C CNN
+F 2 "" H 3900 2250 50  0001 C CNN
+F 3 "" H 3900 2250 50  0001 C CNN
+	1    3900 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1750 3900 1750
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5DEB1BBC
+P 2100 2500
+F 0 "J1" H 2072 2382 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 2072 2473 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 2100 2500 50  0001 C CNN
+F 3 "~" H 2100 2500 50  0001 C CNN
+	1    2100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5DEB0EA6
+P 3350 1750
+F 0 "R1" V 3143 1750 50  0000 C CNN
+F 1 "R" V 3234 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3280 1750 50  0001 C CNN
+F 3 "~" H 3350 1750 50  0001 C CNN
+	1    3350 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DEAFD97
+P 4450 1750
+F 0 "R2" V 4243 1750 50  0000 C CNN
+F 1 "R" V 4334 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4380 1750 50  0001 C CNN
+F 3 "~" H 4450 1750 50  0001 C CNN
+	1    4450 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP5
+U 1 1 5DF981C7
+P 2450 5150
+F 0 "JP5" V 2404 5218 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 2495 5218 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2450 5150 50  0001 C CNN
+F 3 "~" H 2450 5150 50  0001 C CNN
+	1    2450 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5DF995A9
+P 2450 5800
+F 0 "#PWR0106" H 2450 5550 50  0001 C CNN
+F 1 "GND" H 2455 5627 50  0000 C CNN
+F 2 "" H 2450 5800 50  0001 C CNN
+F 3 "" H 2450 5800 50  0001 C CNN
+	1    2450 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5300 2450 5800
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 5DF9ACD2
+P 2700 4050
+F 0 "JP4" V 2654 4118 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 2745 4118 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2700 4050 50  0001 C CNN
+F 3 "~" H 2700 4050 50  0001 C CNN
+	1    2700 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4050 2450 4050
+Connection ~ 2450 4050
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5DF9C384
+P 1350 3850
+F 0 "JP3" V 1304 3918 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 1395 3918 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1350 3850 50  0001 C CNN
+F 3 "~" H 1350 3850 50  0001 C CNN
+	1    1350 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1350 4000 1350 4050
+Wire Wire Line
+	2450 4050 1350 4050
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5DFA3FA2
+P 2950 2350
+F 0 "JP1" V 2904 2418 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 2995 2418 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2950 2350 50  0001 C CNN
+F 3 "~" H 2950 2350 50  0001 C CNN
+	1    2950 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2350 2800 2350
+Wire Wire Line
+	3100 2350 3200 2350
+Wire Wire Line
+	2450 2350 2450 2500
+Wire Wire Line
+	1350 1750 2450 1750
+Wire Wire Line
+	1350 1750 1350 2300
+Wire Wire Line
+	3900 1750 3900 1850
+Connection ~ 2450 1750
+Wire Wire Line
+	2450 1750 3200 1750
+Connection ~ 2450 2350
+Wire Wire Line
+	6700 1750 6700 3500
+$Comp
+L Device:D_TVS D1
+U 1 1 5DFB3907
+P 4600 4650
+F 0 "D1" V 4554 4729 50  0000 L CNN
+F 1 "D_TVS" V 4645 4729 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-523" H 4600 4650 50  0001 C CNN
+F 3 "~" H 4600 4650 50  0001 C CNN
+	1    4600 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 4800 4600 5800
+$Comp
+L power:GND #PWR0107
+U 1 1 5DFB590A
+P 4600 5800
+F 0 "#PWR0107" H 4600 5550 50  0001 C CNN
+F 1 "GND" H 4605 5627 50  0000 C CNN
+F 2 "" H 4600 5800 50  0001 C CNN
+F 3 "" H 4600 5800 50  0001 C CNN
+	1    4600 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1750 2450 2350
+$Comp
+L Device:CP C1
+U 1 1 5E00B6EE
+P 3900 2000
+F 0 "C1" H 4018 2046 50  0000 L CNN
+F 1 "CP" H 4018 1955 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 3938 1850 50  0001 C CNN
+F 3 "~" H 3900 2000 50  0001 C CNN
+	1    3900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 5E00CCB2
+P 5900 5450
+F 0 "C4" H 6018 5496 50  0000 L CNN
+F 1 "CP" H 6018 5405 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 5938 5300 50  0001 C CNN
+F 3 "~" H 5900 5450 50  0001 C CNN
+	1    5900 5450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 1750
+Wire Wire Line
+	4600 1750 5500 1750
+Connection ~ 3900 3700
+Wire Wire Line
+	3900 3700 4150 3700
+Wire Wire Line
+	4300 3000 4150 3000
+Wire Wire Line
+	4750 3000 4600 3000
+$Comp
+L Device:R R5
+U 1 1 5DF94E36
+P 4450 3000
+F 0 "R5" V 4243 3000 50  0000 C CNN
+F 1 "R" V 4334 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4380 3000 50  0001 C CNN
+F 3 "~" H 4450 3000 50  0001 C CNN
+	1    4450 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5DF8F7F9
+P 4900 3000
+F 0 "JP2" H 4900 3205 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 4900 3114 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4900 3000 50  0001 C CNN
+F 3 "~" H 4900 3000 50  0001 C CNN
+	1    4900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2450 5500 3000
+Wire Wire Line
+	5050 3000 5500 3000
+Connection ~ 5500 3000
+Wire Wire Line
+	5500 3000 5500 3500
+Wire Wire Line
+	4150 3000 4150 3700
+Wire Wire Line
+	4150 3700 4600 3700
+Connection ~ 4150 3700
+Wire Wire Line
+	1350 2600 1350 3700
+Wire Wire Line
+	2450 2600 2450 4050
+Wire Wire Line
+	2450 4050 2450 5000
+Wire Wire Line
+	2850 4050 3900 4050
+Wire Wire Line
+	3900 3700 3900 4050
+Wire Wire Line
+	3200 3700 3550 3700
+Wire Wire Line
+	3200 2350 3200 3700
+Wire Wire Line
+	5500 1750 6700 1750
+Connection ~ 6700 1750
+Wire Wire Line
+	6700 1750 8100 1750
+Wire Wire Line
+	6700 3800 6700 5850
+Wire Wire Line
+	5500 3900 5500 5200
+Wire Wire Line
+	4600 3700 4600 4500
+Connection ~ 4600 3700
+Wire Wire Line
+	4600 3700 5200 3700
+$EndSCHEMATC

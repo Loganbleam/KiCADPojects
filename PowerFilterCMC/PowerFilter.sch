@@ -1,0 +1,161 @@
+EESchema Schematic File Version 4
+LIBS:PowerFilter-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:CP C1
+U 1 1 5E457942
+P 5500 3600
+F 0 "C1" H 5618 3646 50  0000 L CNN
+F 1 "CP" H 5618 3555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D22.0mm_P10.00mm_SnapIn" H 5538 3450 50  0001 C CNN
+F 3 "~" H 5500 3600 50  0001 C CNN
+	1    5500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:RJ45 J2
+U 1 1 5E45C163
+P 6650 3100
+F 0 "J2" H 6707 3767 50  0000 C CNN
+F 1 "RJ45" H 6707 3676 50  0000 C CNN
+F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 6650 3125 50  0001 C CNN
+F 3 "~" V 6650 3125 50  0001 C CNN
+	1    6650 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:RJ45 J1
+U 1 1 5E459127
+P 3500 3100
+F 0 "J1" H 3557 3767 50  0000 C CNN
+F 1 "RJ45" H 3557 3676 50  0000 C CNN
+F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 3500 3125 50  0001 C CNN
+F 3 "~" V 3500 3125 50  0001 C CNN
+	1    3500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3300 4050 3300
+Wire Wire Line
+	4050 3400 3900 3400
+Wire Wire Line
+	6100 3350 6100 3300
+Wire Wire Line
+	6100 3300 6250 3300
+Wire Wire Line
+	6250 3400 6100 3400
+Wire Wire Line
+	6100 3400 6100 3350
+Connection ~ 6100 3350
+Wire Wire Line
+	5500 3350 5500 3450
+Wire Wire Line
+	5500 3750 5500 3850
+Wire Wire Line
+	5500 3350 6100 3350
+$Comp
+L power:GND #PWR0101
+U 1 1 5E45F62E
+P 5500 3850
+F 0 "#PWR0101" H 5500 3600 50  0001 C CNN
+F 1 "GND" H 5505 3677 50  0000 C CNN
+F 2 "" H 5500 3850 50  0001 C CNN
+F 3 "" H 5500 3850 50  0001 C CNN
+	1    5500 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3200 4350 3200
+Wire Wire Line
+	3900 3100 6250 3100
+Wire Wire Line
+	3900 3000 6250 3000
+Wire Wire Line
+	3900 2800 6250 2800
+Wire Wire Line
+	3900 2700 6250 2700
+$Comp
+L power:GND #PWR0102
+U 1 1 5E460D9D
+P 5750 3200
+F 0 "#PWR0102" H 5750 2950 50  0001 C CNN
+F 1 "GND" H 5755 3027 50  0000 C CNN
+F 2 "" H 5750 3200 50  0001 C CNN
+F 3 "" H 5750 3200 50  0001 C CNN
+	1    5750 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 3200
+Wire Wire Line
+	5750 3200 6250 3200
+$Comp
+L power:GND #PWR0103
+U 1 1 5E4610E6
+P 5750 2900
+F 0 "#PWR0103" H 5750 2650 50  0001 C CNN
+F 1 "GND" H 5755 2727 50  0000 C CNN
+F 2 "" H 5750 2900 50  0001 C CNN
+F 3 "" H 5750 2900 50  0001 C CNN
+	1    5750 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2900 6250 2900
+$Comp
+L Device:EMI_Filter_CommonMode FL1
+U 1 1 5E46C1CF
+P 4700 3750
+F 0 "FL1" H 4700 4031 50  0000 C CNN
+F 1 "EMI_Filter_CommonMode" H 4700 3940 50  0000 C CNN
+F 2 "PowerFilter:4PCPin" H 4700 3790 50  0001 C CNN
+F 3 "~" H 4700 3790 50  0001 C CNN
+	1    4700 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3300 4050 3350
+Wire Wire Line
+	4050 3350 4150 3350
+Wire Wire Line
+	4150 3350 4150 3850
+Wire Wire Line
+	4150 3850 4500 3850
+Connection ~ 4050 3350
+Wire Wire Line
+	4050 3350 4050 3400
+Wire Wire Line
+	4900 3850 5250 3850
+Wire Wire Line
+	5250 3850 5250 3350
+Wire Wire Line
+	5250 3350 5500 3350
+Connection ~ 5500 3350
+Wire Wire Line
+	4350 3200 4350 3650
+Wire Wire Line
+	4350 3650 4500 3650
+Wire Wire Line
+	4900 3650 5100 3650
+Wire Wire Line
+	5100 3650 5100 3200
+Wire Wire Line
+	5100 3200 5750 3200
+Wire Wire Line
+	3900 2900 4350 2900
+Wire Wire Line
+	4350 2900 4350 3200
+Connection ~ 4350 3200
+$EndSCHEMATC
