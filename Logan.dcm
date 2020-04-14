@@ -1,9 +1,39 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP AD8605
+D Precision Micropower, Low Noise CMOS, Rail-to-Rail Input/Output Operational Amplifier, TSOT-23-5
+K single opamp
+F https://www.analog.com/media/en/technical-documentation/data-sheets/AD8603_8607_8609.pdf
+$ENDCMP
+#
+$CMP MCP4811
+D 10-Bit D/A Converters with SPI Interface, internal Reference (2.048V)
+K 10-Bit DAC SPI Reference 1ch
+F http://ww1.microchip.com/downloads/en/DeviceDoc/22244B.pdf
+$ENDCMP
+#
+$CMP MCP4821
+D 12-Bit D/A Converters with SPI Interface, internal Reference (2.048V)
+K 12-Bit DAC SPI Reference 1ch
+F http://ww1.microchip.com/downloads/en/DeviceDoc/22244B.pdf
+$ENDCMP
+#
+$CMP MCP48CXBX1
+D IC DAC 12BIT 10MSOP 
+K IC DAC 12BIT 10MSOP 
+F https://www.digikey.com/product-detail/en/microchip-technology/MCP48CMB21-E-UN/MCP48CMB21-E-UN-ND/9947595
+$ENDCMP
+#
 $CMP MMBD4148PLM-7
 D TVS Diode Array, 5.5V Standoff, 4 Channels, SC-70-5 package
 K usb esd protection suppression transient
 F http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf
+$ENDCMP
+#
+$CMP OPA188xxDBV
+D Zero-Drift, Precision, Low-Noise, Rail-to-Rail Output, 36-V Operational Amplifier, TSOT-23-5
+K single opamp zero-drift
+F http://www.ti.com/lit/ds/symlink/opa188.pdf
 $ENDCMP
 #
 #End Doc Library
