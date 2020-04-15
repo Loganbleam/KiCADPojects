@@ -6,6 +6,48 @@ K single opamp
 F https://www.analog.com/media/en/technical-documentation/data-sheets/AD8603_8607_8609.pdf
 $ENDCMP
 #
+$CMP MCP1804x-2502xDB
+D 150mA, 28V LDO Regulator With Shutdown, 2.5V Fixed Output, SOT-223
+K linear regulator ldo fixed positive
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf
+$ENDCMP
+#
+$CMP MCP1804x-3002xDB
+D 150mA, 28V LDO Regulator With Shutdown, 3.0V Fixed Output, SOT-223
+K linear regulator ldo fixed positive
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf
+$ENDCMP
+#
+$CMP MCP1804x-3302xDB
+D 150mA, 28V LDO Regulator With Shutdown, 3.3V Fixed Output, SOT-223
+K linear regulator ldo fixed positive
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf
+$ENDCMP
+#
+$CMP MCP1804x-5002xDB
+D 150mA, 28V LDO Regulator With Shutdown, 5.0V Fixed Output, SOT-223
+K linear regulator ldo fixed positive
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf
+$ENDCMP
+#
+$CMP MCP1804x-A002xDB
+D 150mA, 28V LDO Regulator With Shutdown, 10.0V Fixed Output, SOT-223
+K linear regulator ldo fixed positive
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf
+$ENDCMP
+#
+$CMP MCP1804x-C002xDB
+D 150mA, 28V LDO Regulator With Shutdown, 12.0V Fixed Output, SOT-223
+K linear regulator ldo fixed positive
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf
+$ENDCMP
+#
+$CMP MCP1812AT-033
+D 150mA, 28V LDO Regulator With Shutdown, 1.8V Fixed Output, SOT-223
+K linear regulator ldo fixed positive
+F http://ww1.microchip.com/downloads/en/DeviceDoc/MCP1811A-11B-12A-12B-Data-Sheet-20006088B.pdf
+$ENDCMP
+#
 $CMP MCP4811
 D 10-Bit D/A Converters with SPI Interface, internal Reference (2.048V)
 K 10-Bit DAC SPI Reference 1ch
@@ -19,8 +61,8 @@ F http://ww1.microchip.com/downloads/en/DeviceDoc/22244B.pdf
 $ENDCMP
 #
 $CMP MCP48CXBX1
-D IC DAC 12BIT 10MSOP 
-K IC DAC 12BIT 10MSOP 
+D IC DAC 12BIT 10MSOP
+K IC DAC 12BIT 10MSOP
 F https://www.digikey.com/product-detail/en/microchip-technology/MCP48CMB21-E-UN/MCP48CMB21-E-UN-ND/9947595
 $ENDCMP
 #
