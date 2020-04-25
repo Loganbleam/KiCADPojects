@@ -6,6 +6,12 @@ K single opamp
 F https://www.analog.com/media/en/technical-documentation/data-sheets/AD8603_8607_8609.pdf
 $ENDCMP
 #
+$CMP IS31FL3741
+D 12x16 LED matrix driver with 8-bit PWM and breathing, QFN-48
+K led matrix pwm
+F http://www.issi.com/WW/pdf/IS31FL3733.pdf
+$ENDCMP
+#
 $CMP MCP1804x-2502xDB
 D 150mA, 28V LDO Regulator With Shutdown, 2.5V Fixed Output, SOT-223
 K linear regulator ldo fixed positive
