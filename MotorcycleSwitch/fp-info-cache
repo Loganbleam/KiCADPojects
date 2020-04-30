@@ -1,11 +1,39 @@
-18995231907064
+41258671923617
+Logan
+16GAWire1x02
+
+
+0
+2
+2
+Logan
+60AxxxC
+
+
+0
+3
+3
+Logan
+125CDMCCDS-220MC
+
+
+0
+2
+2
 Logan
 742C163103JP
 
 
 0
-10
-10
+16
+16
+Logan
+AOZ2261AQI
+
+
+0
+22
+22
 Logan
 BD433M2EFJ-CE2
 
@@ -14,6 +42,20 @@ BD433M2EFJ-CE2
 9
 9
 Logan
+CMF05TE12LQM
+
+
+0
+2
+2
+Logan
+DFN1616-6
+
+
+0
+7
+7
+Logan
 EXB-2HV103JV
 
 
@@ -21,12 +63,26 @@ EXB-2HV103JV
 16
 16
 Logan
-EXB-N8V103JX
+FuseHolder5x20
 
 
 0
-8
-8
+2
+2
+Logan
+L1MCBreakout
+
+
+0
+6
+6
+Logan
+LEDBreakout
+
+
+0
+6
+6
 Logan
 LL3301NF065QG-Switch
 
@@ -49,8 +105,36 @@ NingboSwitch
 6
 6
 Logan
+PinHeader_1x03_Power
+Through hole straight pin header, 1x03, 2.54mm pitch, single row
+Through hole pin header THT 1x03 2.54mm single row
+0
+3
+3
+Logan
+PinHeader_1x03_Power2
+Through hole straight pin header, 1x03, 2.54mm pitch, single row
+Through hole pin header THT 1x03 2.54mm single row
+0
+3
+3
+Logan
+QFN-60_EP_7x7_Pitch0.4mm
+
+
+0
+92
+61
+Logan
 RESCAXS80P320X160X60-8N
 
+
+0
+8
+8
+Logan
+Rarray
+EXBN8V
 
 0
 8
@@ -62,6 +146,13 @@ S3J-13-F
 0
 2
 2
+Logan
+SOT_23_3
+
+
+0
+3
+3
 Logan
 TAG-CONNECT_TC2050-IDC
 
@@ -81,5 +172,12 @@ TPS4H160AQPWPRQ1
 
 
 0
-50
+47
 28
+Logan
+XTAL-HC49US
+
+
+0
+2
+2

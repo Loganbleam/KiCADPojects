@@ -1,4 +1,4 @@
-16345437361312762
+16348613104632750
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -49623,6 +49623,13 @@ Yellow 5381 Series LED
 2
 2
 Logan
+16GAWire1x02
+
+
+0
+2
+2
+Logan
 60AxxxC
 
 
@@ -49678,6 +49685,13 @@ EXB-2HV103JV
 0
 16
 16
+Logan
+FuseHolder5x20
+
+
+0
+2
+2
 Logan
 L1MCBreakout
 

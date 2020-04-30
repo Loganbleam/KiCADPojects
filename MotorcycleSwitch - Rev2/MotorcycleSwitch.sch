@@ -52,14 +52,14 @@ Wire Wire Line
 	12000 6750 11400 6750
 Wire Wire Line
 	11400 6750 11400 7150
-Text Notes 11100 4750 0    50   ~ 0
-For version A, four individual STx pins report the fault conditions, each pin for its \nrespective channel. When a fault condition occurs, it pulls STx down to GND.A 3.3- or 5-V \nexternalpullup is requiredto match the supply level of the \nmicrocontroller.The digital status of each channel can be reported individually,or \nglobally by connecting all the STx pins together
+Text Notes 11100 3925 0    50   ~ 0
+For version A, four individual STx pins report the fault conditions, each pin for its \nrespective channel. When a fault condition occurs, it pulls STx down to GND.A 3.3- or 5-V \nexternalpullup is required to match the supply level of the \nmicrocontroller.The digital status of each channel can be reported individually,or \nglobally by connecting all the STx pins together
 $Comp
 L Device:R R2
 U 1 1 5E4C0334
 P 11150 6900
 F 0 "R2" H 11220 6946 50  0000 L CNN
-F 1 "650" H 11220 6855 50  0000 L CNN
+F 1 "1k" H 11220 6855 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 11080 6900 50  0001 C CNN
 F 3 "~" H 11150 6900 50  0001 C CNN
 	1    11150 6900
@@ -72,11 +72,11 @@ Wire Wire Line
 Wire Wire Line
 	11150 7050 11150 7150
 Wire Wire Line
-	1975 1450 2275 1450
+	2425 1575 2725 1575
 Wire Wire Line
-	1975 1350 2275 1350
+	2425 1475 2725 1475
 Wire Wire Line
-	1475 850  1775 850 
+	1925 975  2225 975 
 $Comp
 L power:+3V3 #PWR0104
 U 1 1 5E4DBAE7
@@ -95,36 +95,36 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR0105
 U 1 1 5E4DF765
-P 1775 850
-F 0 "#PWR0105" H 1775 700 50  0001 C CNN
-F 1 "+3V3" H 1790 1023 50  0000 C CNN
-F 2 "" H 1775 850 50  0001 C CNN
-F 3 "" H 1775 850 50  0001 C CNN
-	1    1775 850 
+P 2225 975
+F 0 "#PWR0105" H 2225 825 50  0001 C CNN
+F 1 "+3V3" H 2240 1148 50  0000 C CNN
+F 2 "" H 2225 975 50  0001 C CNN
+F 3 "" H 2225 975 50  0001 C CNN
+	1    2225 975 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 5E4DFD19
-P 2125 1950
-F 0 "#PWR0106" H 2125 1700 50  0001 C CNN
-F 1 "GND" H 2130 1777 50  0000 C CNN
-F 2 "" H 2125 1950 50  0001 C CNN
-F 3 "" H 2125 1950 50  0001 C CNN
-	1    2125 1950
+P 2575 2075
+F 0 "#PWR0106" H 2575 1825 50  0001 C CNN
+F 1 "GND" H 2580 1902 50  0000 C CNN
+F 2 "" H 2575 2075 50  0001 C CNN
+F 3 "" H 2575 2075 50  0001 C CNN
+	1    2575 2075
 	-1   0    0    1   
 $EndComp
-Text Label 2275 1350 0    50   ~ 0
+Text Label 2725 1475 0    50   ~ 0
 SWDIO
-Text Label 2275 1450 0    50   ~ 0
+Text Label 2725 1575 0    50   ~ 0
 SWCLK
 Wire Wire Line
-	1475 2050 2125 2050
+	1925 2175 2575 2175
 Wire Wire Line
-	2125 2050 2125 1950
+	2575 2175 2575 2075
 Wire Wire Line
-	1975 1150 2275 1150
-Text Label 2275 1150 0    50   ~ 0
+	2425 1275 2725 1275
+Text Label 2725 1275 0    50   ~ 0
 RESET
 $Comp
 L power:GND #PWR0107
@@ -230,8 +230,8 @@ Wire Wire Line
 	12000 6300 11650 6300
 Wire Wire Line
 	12000 6450 11650 6450
-Text Notes 11650 7350 0    50   ~ 0
-Rcl = [0.8V * 2500] / Iout(A)
+Text Notes 11600 7400 0    50   ~ 0
+Rcl = [0.8 * 2500] / Iout(A)\nRcl = [0.8 * 2500] / 2A(limit) = 1kohm
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5E60B05F
@@ -528,10 +528,6 @@ F 3 "~" H 2550 6600 50  0001 C CNN
 	1    2550 6600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5450 6000 5300 6000
-Wire Wire Line
-	5450 6100 5300 6100
 Text Label 5200 6400 2    50   ~ 0
 SW_1
 Text Label 5200 6700 2    50   ~ 0
@@ -647,8 +643,6 @@ Wire Wire Line
 Connection ~ 6050 4450
 Wire Wire Line
 	5200 5800 5450 5800
-Wire Wire Line
-	5300 5900 5450 5900
 Wire Wire Line
 	5200 5700 5450 5700
 Text Label 3050 3200 0    50   ~ 0
@@ -929,8 +923,6 @@ Wire Wire Line
 Wire Wire Line
 	8900 6850 8600 6850
 Wire Wire Line
-	6650 5900 6850 5900
-Wire Wire Line
 	6650 6000 7100 6000
 Wire Wire Line
 	6650 6200 7100 6200
@@ -1022,7 +1014,7 @@ Text Label 11900 7050 2    50   ~ 0
 DIAG_EN
 Text Label 7100 6000 0    50   ~ 0
 DIAG_EN
-Text Label 6050 7500 3    50   ~ 0
+Text Label 6050 7850 3    50   ~ 0
 PA_PTT_N
 Text Notes 700  7800 0    50   ~ 0
 (3.3V-2.9V)/100ohm = 4mA
@@ -1297,12 +1289,8 @@ Wire Wire Line
 	2700 6600 2950 6600
 Wire Wire Line
 	1700 6600 2150 6600
-Wire Wire Line
-	6150 7500 6150 7850
 Text Label 7100 6200 0    50   ~ 0
 DIAG_4in
-Wire Wire Line
-	6650 5250 6850 5250
 Text Label 7100 6300 0    50   ~ 0
 DIAG_3in
 Text Label 7100 6400 0    50   ~ 0
@@ -1352,7 +1340,7 @@ Wire Wire Line
 	5700 9800 5700 9950
 Wire Wire Line
 	5700 9400 5700 9150
-Text Label 6650 5150 0    50   ~ 0
+Text Label 6850 5150 0    50   ~ 0
 PA_PTT_P
 Text Label 5125 9600 2    50   ~ 0
 PA_PTT_N
@@ -1385,7 +1373,7 @@ L Device:R R21
 U 1 1 5F59DBD9
 P 6850 9150
 F 0 "R21" V 6643 9150 50  0000 C CNN
-F 1 "100" V 6734 9150 50  0000 C CNN
+F 1 "200" V 6734 9150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6780 9150 50  0001 C CNN
 F 3 "~" H 6850 9150 50  0001 C CNN
 	1    6850 9150
@@ -1415,8 +1403,6 @@ Wire Wire Line
 	7900 5450 8900 5450
 Wire Wire Line
 	6650 6900 7100 6900
-Wire Wire Line
-	6650 6100 6850 6100
 Wire Wire Line
 	5450 6900 5200 6900
 Wire Wire Line
@@ -1814,19 +1800,15 @@ EndData
 $EndBitmap
 Text Label 4200 1700 2    50   ~ 0
 HORN
-Text Notes 6425 1900 0    50   ~ 0
-\n\n    Determine quiescent current of rev1 - change rev2 if needed\n    Include diagnostic feedback from load driver to red LED's (user)\n    Include robust software debouncing\nFix Schotky\n\n
-Text Notes 6450 1950 0    50   ~ 0
-Add 2x5 prog header
 $Comp
 L Logan:AdafruitConverter J1
 U 1 1 5EA3B7C5
-P 1475 1450
-F 0 "J1" H 1032 1496 50  0000 R CNN
-F 1 "AdafruitConverter" H 1032 1405 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 1475 1450 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 1125 200 50  0001 C CNN
-	1    1475 1450
+P 1925 1575
+F 0 "J1" H 1482 1621 50  0000 R CNN
+F 1 "AdafruitConverter" H 1482 1530 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 1925 1575 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 1575 325 50  0001 C CNN
+	1    1925 1575
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2258,8 +2240,6 @@ $EndComp
 Wire Wire Line
 	6650 5050 6850 5050
 Wire Wire Line
-	6650 4950 6850 4950
-Wire Wire Line
 	6650 6600 7100 6600
 Wire Wire Line
 	6650 6700 7100 6700
@@ -2340,4 +2320,12 @@ F 3 "~" H 14900 1300 50  0001 C CNN
 	1    14900 1300
 	-1   0    0    1   
 $EndComp
+Text Notes 11100 4625 0    50   ~ 0
+The DIAG_EN pin enables or disables the diagnostic functions.\nIf multiple devices are used,but the ADCresourceis limited in \nthe microcontroller,the MCU can use GPIOs to set DIAG_EN high to\n enable the diagnostics of one device while disabling the \ndiagnostics of the other devices by setting DIAG_EN low. In addition,\nthe device can keep the power consumption to a minimum by \nsetting DIAG_EN and INx low
+Text Notes 6925 8975 0    39   ~ 0
+For current limiting in case of \naccidental shoot through
+Wire Wire Line
+	6650 5150 6850 5150
+Wire Wire Line
+	6050 7500 6050 7850
 $EndSCHEMATC

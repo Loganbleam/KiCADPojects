@@ -1,4 +1,4 @@
-(module TL3305BF260QG (layer F.Cu) (tedit 5E8CD31E)
+(module TL3305BF260QG (layer F.Cu) (tedit 5EA84EB2)
   (attr smd)
   (fp_text reference REF** (at 0.15748 -4.19608 180) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -30,7 +30,7 @@
   (pad 1 smd rect (at -3.65 1.5) (size 1.6 1.4) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 3.65 -1.5) (size 1.6 1.4) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at 3.65 1.5) (size 1.6 1.4) (layers F.Cu F.Paste F.Mask))
-  (model C:/Users/Logan/Documents/Projects/KiCadProj/StepFiles/TL3305BFxxxxG.stp
+  (model C:/Users/lbleam/Documents/KiCADPojects/StepFiles/TL3305BFxxxxG.stp
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
