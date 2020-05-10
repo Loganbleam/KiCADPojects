@@ -1375,10 +1375,6 @@ F 3 "~" H 1300 2700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1500 2500 1700 2500
-Wire Wire Line
-	1500 2600 1700 2600
-Wire Wire Line
 	1500 2700 1700 2700
 Wire Wire Line
 	1500 2800 1700 2800
@@ -1393,10 +1389,6 @@ F 3 "" H 1700 2700 50  0001 C CNN
 	1    1700 2700
 	0    -1   -1   0   
 $EndComp
-Text Label 1700 2600 0    50   ~ 0
-SDA
-Text Label 1700 2500 0    50   ~ 0
-SCL
 $Comp
 L Connector:Conn_01x04_Female J3
 U 1 1 5E87A062
@@ -1408,10 +1400,6 @@ F 3 "~" H 17550 3200 50  0001 C CNN
 	1    17550 3200
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	17750 3000 17950 3000
-Wire Wire Line
-	17750 3100 17950 3100
 Wire Wire Line
 	17750 3200 17950 3200
 Wire Wire Line
@@ -1427,10 +1415,6 @@ F 3 "" H 17950 3200 50  0001 C CNN
 	1    17950 3200
 	0    -1   -1   0   
 $EndComp
-Text Label 17950 3100 0    50   ~ 0
-SDA
-Text Label 17950 3000 0    50   ~ 0
-SCL
 $Comp
 L power:+VDC #PWR0111
 U 1 1 5E62586E
@@ -1517,45 +1501,6 @@ Wire Wire Line
 Text Label 2450 6600 1    50   ~ 0
 RESET
 $Comp
-L Device:R R29
-U 1 1 5E777D3A
-P 3350 4350
-F 0 "R29" V 3143 4350 50  0000 C CNN
-F 1 "22" V 3234 4350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3280 4350 50  0001 C CNN
-F 3 "~" H 3350 4350 50  0001 C CNN
-	1    3350 4350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2400 4000 2700 4000
-Wire Wire Line
-	3000 4000 3700 4000
-Wire Wire Line
-	3500 4150 3700 4150
-$Comp
-L Device:R R22
-U 1 1 5E968443
-P 3350 4150
-F 0 "R22" V 3143 4150 50  0000 C CNN
-F 1 "22" V 3234 4150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3280 4150 50  0001 C CNN
-F 3 "~" H 3350 4150 50  0001 C CNN
-	1    3350 4150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R21
-U 1 1 5E97F985
-P 2850 4000
-F 0 "R21" V 2643 4000 50  0000 C CNN
-F 1 "22" V 2734 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2780 4000 50  0001 C CNN
-F 3 "~" H 2850 4000 50  0001 C CNN
-	1    2850 4000
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR0127
 U 1 1 5E9BA491
 P 3100 8200
@@ -1570,14 +1515,6 @@ Wire Wire Line
 	3100 7900 3100 8200
 Wire Wire Line
 	3600 7300 4450 7300
-Wire Wire Line
-	3600 7400 3750 7400
-Wire Wire Line
-	3600 7500 3750 7500
-Text Label 3750 7400 0    50   ~ 0
-SCL
-Text Label 3750 7500 0    50   ~ 0
-SDA
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J1
 U 1 1 5E623C02
@@ -1596,13 +1533,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 4200 3000 4150
 Wire Wire Line
-	3000 4150 3200 4150
-Wire Wire Line
 	3000 4300 3000 4350
-Wire Wire Line
-	3000 4350 3200 4350
-Wire Wire Line
-	3500 4350 3700 4350
 $Comp
 L power:+3.3V #PWR0116
 U 1 1 5E86BC02
@@ -1946,4 +1877,10 @@ Wire Wire Line
 	15100 11050 15100 11450
 Wire Wire Line
 	15450 11050 15450 11450
+Wire Wire Line
+	2400 4000 3700 4000
+Wire Wire Line
+	3000 4150 3700 4150
+Wire Wire Line
+	3000 4350 3700 4350
 $EndSCHEMATC
