@@ -296,23 +296,6 @@ Wire Wire Line
 	1175 1200 1125 1200
 Wire Wire Line
 	3575 3000 3575 3050
-Wire Wire Line
-	3575 3050 3750 3050
-$Comp
-L Device:R R?
-U 1 1 5F183C96
-P 3900 3050
-AR Path="/5F183C96" Ref="R?"  Part="1" 
-AR Path="/5EE32213/5F183C96" Ref="R9"  Part="1" 
-F 0 "R9" V 3693 3050 50  0000 C CNN
-F 1 "10k" V 3784 3050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3830 3050 50  0001 C CNN
-F 3 "~" H 3900 3050 50  0001 C CNN
-	1    3900 3050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4050 3050 4300 3050
 Text GLabel 1075 2600 0    50   Input ~ 0
 GND
 $Comp
@@ -473,4 +456,6 @@ F 3 "~" H 5425 2950 50  0001 C CNN
 	1    5425 2950
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	3575 3050 4300 3050
 $EndSCHEMATC
