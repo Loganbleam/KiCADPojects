@@ -29,21 +29,6 @@ F 3 "" H 2750 1900 50  0001 C CNN
 	1    2750 1900
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3650 1900 3850 1900
-Wire Wire Line
-	3650 2000 3850 2000
-$Comp
-L power:GND #PWR0125
-U 1 1 5E87A072
-P 3850 1900
-F 0 "#PWR0125" H 3850 1650 50  0001 C CNN
-F 1 "GND" V 3855 1772 50  0000 R CNN
-F 2 "" H 3850 1900 50  0001 C CNN
-F 3 "" H 3850 1900 50  0001 C CNN
-	1    3850 1900
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5EBB408E
@@ -75,17 +60,6 @@ F 1 "Conn_01x02_Female" H 2242 1766 50  0000 C CNN
 F 2 "AddressableLED:1.5mmHole" H 2350 2000 50  0001 C CNN
 F 3 "~" H 2350 2000 50  0001 C CNN
 	1    2350 2000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J3
-U 1 1 5EE7B55E
-P 3450 2000
-F 0 "J3" H 3342 1675 50  0000 C CNN
-F 1 "Conn_01x02_Female" H 3342 1766 50  0000 C CNN
-F 2 "AddressableLED:1.5mmHoleMirror" H 3450 2000 50  0001 C CNN
-F 3 "~" H 3450 2000 50  0001 C CNN
-	1    3450 2000
 	-1   0    0    1   
 $EndComp
 $Sheet
@@ -1478,27 +1452,110 @@ Wire Wire Line
 	13075 13700 13000 13700
 Wire Wire Line
 	13075 13700 13075 14100
-Text GLabel 1450 3250 0    50   Input ~ 0
-GND
+Text GLabel 2750 2000 2    50   Input ~ 0
+VDC
+Text GLabel 2275 3100 0    50   Input ~ 0
+3V8
+Wire Wire Line
+	2275 3100 2375 3100
+Wire Wire Line
+	2375 3100 2375 3150
+Wire Wire Line
+	2375 3150 2525 3150
+Wire Wire Line
+	2525 3050 2375 3050
+Wire Wire Line
+	2375 3050 2375 3100
+Connection ~ 2375 3100
 $Comp
 L power:GND #PWR?
-U 1 1 5F218C55
-P 1550 3525
-AR Path="/5F00043F/5F218C55" Ref="#PWR?"  Part="1" 
-AR Path="/5F218C55" Ref="#PWR0107"  Part="1" 
-F 0 "#PWR0107" H 1550 3275 50  0001 C CNN
-F 1 "GND" H 1555 3352 50  0000 C CNN
-F 2 "" H 1550 3525 50  0001 C CNN
-F 3 "" H 1550 3525 50  0001 C CNN
-	1    1550 3525
+U 1 1 5ED735F2
+P 3750 2800
+AR Path="/5F00043F/5ED735F2" Ref="#PWR?"  Part="1" 
+AR Path="/5ED735F2" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 3750 2550 50  0001 C CNN
+F 1 "GND" H 3755 2627 50  0000 C CNN
+F 2 "" H 3750 2800 50  0001 C CNN
+F 3 "" H 3750 2800 50  0001 C CNN
+	1    3750 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1450 3250 1550 3250
+	3525 2850 3625 2850
 Wire Wire Line
-	1550 3250 1550 3525
-Text GLabel 2750 2000 2    50   Input ~ 0
+	3625 2850 3625 2800
+Wire Wire Line
+	3625 2800 3750 2800
+Wire Wire Line
+	3525 2750 3625 2750
+Wire Wire Line
+	3625 2750 3625 2800
+Connection ~ 3625 2800
+Wire Wire Line
+	1800 3575 1800 3850
+Wire Wire Line
+	1700 3575 1800 3575
+$Comp
+L power:GND #PWR?
+U 1 1 5F218C55
+P 1800 3850
+AR Path="/5F00043F/5F218C55" Ref="#PWR?"  Part="1" 
+AR Path="/5F218C55" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 1800 3600 50  0001 C CNN
+F 1 "GND" H 1805 3677 50  0000 C CNN
+F 2 "" H 1800 3850 50  0001 C CNN
+F 3 "" H 1800 3850 50  0001 C CNN
+	1    1800 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 1700 3575 0    50   Input ~ 0
+GND
+$Comp
+L power:GND #PWR?
+U 1 1 5EF86E72
+P 2300 2800
+AR Path="/5F00043F/5EF86E72" Ref="#PWR?"  Part="1" 
+AR Path="/5EF86E72" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 2300 2550 50  0001 C CNN
+F 1 "GND" H 2305 2627 50  0000 C CNN
+F 2 "" H 2300 2800 50  0001 C CNN
+F 3 "" H 2300 2800 50  0001 C CNN
+	1    2300 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2525 2750 2425 2750
+Wire Wire Line
+	2425 2750 2425 2800
+Wire Wire Line
+	2425 2800 2300 2800
+Wire Wire Line
+	2525 2850 2425 2850
+Wire Wire Line
+	2425 2850 2425 2800
+Connection ~ 2425 2800
+Text GLabel 3750 3100 2    50   Input ~ 0
 VDC
-Text GLabel 3850 2000 2    50   Input ~ 0
-VDC
+Wire Wire Line
+	3525 3050 3625 3050
+Wire Wire Line
+	3625 3050 3625 3100
+Wire Wire Line
+	3625 3100 3750 3100
+Wire Wire Line
+	3525 3150 3625 3150
+Wire Wire Line
+	3625 3150 3625 3100
+Connection ~ 3625 3100
+$Comp
+L Logan:LoganSWModule U1
+U 1 1 5EFE3F02
+P 3025 2950
+F 0 "U1" H 3025 3375 50  0000 C CNN
+F 1 "LoganSWModule" H 3025 3284 50  0000 C CNN
+F 2 "Logan:Logan_SWmodule" H 3025 3250 50  0001 C CNN
+F 3 "" H 3025 3250 50  0001 C CNN
+	1    3025 2950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
