@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ElectronicLoad-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -28,7 +28,7 @@ $EndComp
 Wire Wire Line
 	2575 3775 2575 3675
 Wire Wire Line
-	2575 4975 2575 5125
+	2575 4975 2575 5075
 $Comp
 L Connector:Conn_01x02_Female J3
 U 1 1 5EA4144A
@@ -189,4 +189,11 @@ Wire Wire Line
 	5425 5975 5625 5975
 Wire Wire Line
 	5475 5875 5625 5875
+Wire Wire Line
+	2575 5075 2475 5075
+Wire Wire Line
+	2475 5075 2475 4975
+Connection ~ 2575 5075
+Wire Wire Line
+	2575 5075 2575 5125
 $EndSCHEMATC

@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ElectronicLoad-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -90,9 +90,7 @@ Connection ~ 5100 2650
 Wire Wire Line
 	6000 4650 6400 4650
 Wire Wire Line
-	6000 4750 6400 4750
-Wire Wire Line
-	6000 4950 6400 4950
+	6000 3100 6400 3100
 $Comp
 L Device:C C?
 U 1 1 5EDE33B4
@@ -194,9 +192,7 @@ Text HLabel 6400 4450 2    50   Input ~ 0
 ~CS
 Text HLabel 6400 4650 2    50   Input ~ 0
 MISO
-Text HLabel 6400 4750 2    50   Input ~ 0
-Data
-Text HLabel 6400 4950 2    50   Input ~ 0
+Text HLabel 6400 3100 2    50   Input ~ 0
 EN
 Text HLabel 4550 3250 0    50   Input ~ 0
 SWDIO
@@ -347,8 +343,6 @@ F 3 "~" H 8100 4850 50  0001 C CNN
 $EndComp
 Text HLabel 7600 5050 3    50   Input ~ 0
 SCK
-Text HLabel 7700 5050 3    50   Input ~ 0
-~CS
 Text HLabel 7500 5050 3    50   Input ~ 0
 MISO
 Text HLabel 7800 5050 3    50   Input ~ 0
@@ -359,8 +353,6 @@ Wire Wire Line
 	7900 5050 7900 4850
 Wire Wire Line
 	7800 5050 7800 4850
-Wire Wire Line
-	7700 5050 7700 4850
 Wire Wire Line
 	7600 5050 7600 4850
 Wire Wire Line
@@ -376,19 +368,6 @@ F 1 "TestPoint" H 7858 4877 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 8000 4850 50  0001 C CNN
 F 3 "~" H 8000 4850 50  0001 C CNN
 	1    7800 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5EBB0BF4
-P 7700 4850
-AR Path="/5EC9D17E/5EBB0BF4" Ref="TP?"  Part="1" 
-AR Path="/5EDE0641/5EBB0BF4" Ref="TP6"  Part="1" 
-F 0 "TP6" H 7758 4968 50  0000 L CNN
-F 1 "TestPoint" H 7758 4877 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 7900 4850 50  0001 C CNN
-F 3 "~" H 7900 4850 50  0001 C CNN
-	1    7700 4850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -459,7 +438,76 @@ $EndComp
 Wire Wire Line
 	2500 4350 2500 4400
 Wire Wire Line
-	6000 4850 6400 4850
-Text HLabel 6400 4850 2    50   Input ~ 0
+	4800 3650 4400 3650
+Text HLabel 4400 3650 0    50   Input ~ 0
 CLK
+Wire Wire Line
+	4800 3550 4400 3550
+Text HLabel 4400 3550 0    50   Input ~ 0
+Data
+Text GLabel 6425 5750 0    50   Input ~ 0
+A
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 5EDC1F38
+P 6850 5850
+F 0 "SW?" H 6850 6217 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 6850 6126 50  0000 C CNN
+F 2 "" H 6700 6010 50  0001 C CNN
+F 3 "~" H 6850 6110 50  0001 C CNN
+	1    6850 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 5750 6425 5750
+Text GLabel 6425 5950 0    50   Input ~ 0
+B
+Wire Wire Line
+	6550 5950 6425 5950
+$Comp
+L Device:R R?
+U 1 1 5EDC6684
+P 7275 6175
+F 0 "R?" H 7345 6221 50  0000 L CNN
+F 1 "10k" H 7345 6130 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7205 6175 50  0001 C CNN
+F 3 "~" H 7275 6175 50  0001 C CNN
+	1    7275 6175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 5950 7275 5950
+Wire Wire Line
+	7275 5950 7275 6025
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EDCBCE1
+P 7075 6325
+AR Path="/5EDCBCE1" Ref="#PWR?"  Part="1" 
+AR Path="/5EC9D17E/5EDCBCE1" Ref="#PWR?"  Part="1" 
+AR Path="/5EDE0641/5EDCBCE1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7075 6175 50  0001 C CNN
+F 1 "+3V3" H 7090 6498 50  0000 C CNN
+F 2 "" H 7075 6325 50  0001 C CNN
+F 3 "" H 7075 6325 50  0001 C CNN
+	1    7075 6325
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7275 6325 7075 6325
+$Comp
+L power:GND #PWR?
+U 1 1 5EDCDDE6
+P 7450 5775
+F 0 "#PWR?" H 7450 5525 50  0001 C CNN
+F 1 "GND" H 7455 5602 50  0000 C CNN
+F 2 "" H 7450 5775 50  0001 C CNN
+F 3 "" H 7450 5775 50  0001 C CNN
+	1    7450 5775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 5750 7450 5750
+Wire Wire Line
+	7450 5750 7450 5775
 $EndSCHEMATC

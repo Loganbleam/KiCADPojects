@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ElectronicLoad-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -48,8 +48,6 @@ Wire Wire Line
 	5200 3350 5200 3450
 Wire Wire Line
 	5200 2750 5200 2650
-Text Notes 5250 2400 0    118  ~ 0
-CHECK POWER RAILS
 Wire Wire Line
 	3275 2550 3275 2350
 Wire Wire Line
@@ -63,7 +61,7 @@ Wire Wire Line
 Wire Wire Line
 	2775 2750 2575 2750
 Wire Wire Line
-	6800 2850 6800 2000
+	6800 2850 6800 2525
 $Comp
 L Device:R R?
 U 1 1 5ED74122
@@ -134,7 +132,7 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8603_
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 3250 6800 4200
+	6800 3250 6800 3400
 $Comp
 L Device:R R?
 U 1 1 5ED7414A
@@ -221,23 +219,6 @@ Wire Wire Line
 	5575 6275 5575 6375
 Wire Wire Line
 	5575 5875 5575 5975
-$Comp
-L Device:C C?
-U 1 1 5ED7F47E
-P 5000 1925
-AR Path="/5ED7F47E" Ref="C?"  Part="1" 
-AR Path="/5EC9D635/5ED7F47E" Ref="C8"  Part="1" 
-F 0 "C8" H 5115 1971 50  0000 L CNN
-F 1 "1u" H 5115 1880 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5038 1775 50  0001 C CNN
-F 3 "~" H 5000 1925 50  0001 C CNN
-	1    5000 1925
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 2075 5000 2175
-Wire Wire Line
-	5000 1675 5000 1775
 Wire Wire Line
 	5575 5050 5575 5175
 Wire Wire Line
@@ -415,17 +396,6 @@ F 3 "" H 5200 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0132
-U 1 1 8AA0E810
-P 5000 1675
-F 0 "#PWR0132" H 5000 1525 50  0001 C CNN
-F 1 "+5V" H 5015 1848 50  0000 C CNN
-F 2 "" H 5000 1675 50  0001 C CNN
-F 3 "" H 5000 1675 50  0001 C CNN
-	1    5000 1675
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0133
 U 1 1 8AA0FB79
 P 2700 1675
@@ -456,17 +426,6 @@ F 1 "+5V" H 3290 2523 50  0000 C CNN
 F 2 "" H 3275 2350 50  0001 C CNN
 F 3 "" H 3275 2350 50  0001 C CNN
 	1    3275 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0136
-U 1 1 8AA15F14
-P 5000 2175
-F 0 "#PWR0136" H 5000 1925 50  0001 C CNN
-F 1 "GND" H 5005 2002 50  0000 C CNN
-F 2 "" H 5000 2175 50  0001 C CNN
-F 3 "" H 5000 2175 50  0001 C CNN
-	1    5000 2175
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -765,4 +724,37 @@ F 3 "" H 5575 5875 50  0001 C CNN
 	1    5575 5875
 	1    0    0    -1  
 $EndComp
+Text Notes 5250 2400 0    118  ~ 0
+CHECK POWER RAILS
+$Comp
+L Logan:BUK9515-60E Q?
+U 1 1 5ED9969F
+P 7150 2775
+AR Path="/5ED9969F" Ref="Q?"  Part="1" 
+AR Path="/5EC9D635/5ED9969F" Ref="Q2"  Part="1" 
+F 0 "Q2" H 7356 2821 50  0000 L CNN
+F 1 "BUK9515-60E" H 7356 2730 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7350 2700 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/rochester-electronics-llc/BUK9515-60E-127/2156-BUK9515-60E127-NX-ND/11539357" V 7150 2775 50  0001 L CNN
+	1    7150 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2775 6400 2775
+Wire Wire Line
+	6400 2775 6400 3050
+Wire Wire Line
+	7250 2575 7250 2525
+Wire Wire Line
+	7250 2525 6800 2525
+Connection ~ 6800 2525
+Wire Wire Line
+	6800 2525 6800 2000
+Wire Wire Line
+	7250 2975 7250 3400
+Wire Wire Line
+	7250 3400 6800 3400
+Connection ~ 6800 3400
+Wire Wire Line
+	6800 3400 6800 4200
 $EndSCHEMATC

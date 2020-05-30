@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ElectronicLoad-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -403,51 +403,60 @@ F 3 "" H 1150 1200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1000 1200 1150 1200
-$Comp
-L Connector:TestPoint TP3
-U 1 1 5EB59CF4
-P 6100 4250
-F 0 "TP3" H 6158 4368 50  0000 L CNN
-F 1 "TestPoint" H 6158 4277 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6300 4250 50  0001 C CNN
-F 3 "~" H 6300 4250 50  0001 C CNN
-	1    6100 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6100 4250 6550 4250
 Wire Wire Line
 	4650 4250 5050 4250
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5EB66A58
-P 4300 2450
-F 0 "TP1" H 4358 2568 50  0000 L CNN
-F 1 "TestPoint" H 4358 2477 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 4500 2450 50  0001 C CNN
-F 3 "~" H 4500 2450 50  0001 C CNN
-	1    4300 2450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4300 2450 4300 2550
 Connection ~ 4300 2550
 Wire Wire Line
 	4300 2550 4600 2550
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5EB68DE3
-P 4300 2750
-F 0 "TP2" H 4358 2868 50  0000 L CNN
-F 1 "TestPoint" H 4358 2777 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 4500 2750 50  0001 C CNN
-F 3 "~" H 4500 2750 50  0001 C CNN
-	1    4300 2750
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4300 2650 4300 2750
 Connection ~ 4300 2650
 Wire Wire Line
 	4300 2650 4500 2650
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5ED2405D
+P 4300 2750
+AR Path="/5EC9D17E/5ED2405D" Ref="TP2"  Part="1" 
+AR Path="/5EDE0641/5ED2405D" Ref="TP?"  Part="1" 
+AR Path="/5EC9D635/5ED2405D" Ref="TP?"  Part="1" 
+F 0 "TP2" H 4358 2868 50  0000 L CNN
+F 1 "TestPoint" H 4358 2777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 4500 2750 50  0001 C CNN
+F 3 "~" H 4500 2750 50  0001 C CNN
+	1    4300 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5ED257EA
+P 4300 2450
+AR Path="/5EC9D17E/5ED257EA" Ref="TP1"  Part="1" 
+AR Path="/5EDE0641/5ED257EA" Ref="TP?"  Part="1" 
+AR Path="/5EC9D635/5ED257EA" Ref="TP?"  Part="1" 
+F 0 "TP1" H 4358 2568 50  0000 L CNN
+F 1 "TestPoint" H 4358 2477 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 4500 2450 50  0001 C CNN
+F 3 "~" H 4500 2450 50  0001 C CNN
+	1    4300 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5ED27219
+P 6100 4250
+AR Path="/5EC9D17E/5ED27219" Ref="TP3"  Part="1" 
+AR Path="/5EDE0641/5ED27219" Ref="TP?"  Part="1" 
+AR Path="/5EC9D635/5ED27219" Ref="TP?"  Part="1" 
+F 0 "TP3" H 6158 4368 50  0000 L CNN
+F 1 "TestPoint" H 6158 4277 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6300 4250 50  0001 C CNN
+F 3 "~" H 6300 4250 50  0001 C CNN
+	1    6100 4250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ElectronicLoad-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -199,12 +199,6 @@ Wire Wire Line
 	4250 2900 4250 2300
 Wire Wire Line
 	2625 2500 2400 2500
-Wire Wire Line
-	2400 2500 2400 3075
-Wire Wire Line
-	2400 3075 3025 3075
-Wire Wire Line
-	3025 3075 3025 3000
 $Comp
 L power:GND #PWR0158
 U 1 1 5ECFF242
@@ -216,9 +210,6 @@ F 3 "" H 3025 3175 50  0001 C CNN
 	1    3025 3175
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3025 3075 3025 3175
-Connection ~ 3025 3075
 $Comp
 L power:GND #PWR0159
 U 1 1 5ED0110A
@@ -343,4 +334,13 @@ Text HLabel 2000 2250 0    50   Input ~ 0
 CLK
 Text HLabel 4475 3275 3    50   Input ~ 0
 EN
+Wire Wire Line
+	3025 3075 3025 3175
+Wire Wire Line
+	3025 3075 3025 3000
+Connection ~ 3025 3075
+Wire Wire Line
+	2400 3075 3025 3075
+Wire Wire Line
+	2400 2500 2400 3075
 $EndSCHEMATC
