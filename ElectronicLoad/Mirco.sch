@@ -92,7 +92,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 4750 6400 4750
 Wire Wire Line
-	6000 5050 6400 5050
+	6000 4950 6400 4950
 $Comp
 L Device:C C?
 U 1 1 5EDE33B4
@@ -195,9 +195,9 @@ Text HLabel 6400 4450 2    50   Input ~ 0
 Text HLabel 6400 4650 2    50   Input ~ 0
 MISO
 Text HLabel 6400 4750 2    50   Input ~ 0
-SCL
-Text HLabel 6400 5050 2    50   Input ~ 0
-SDA
+Data
+Text HLabel 6400 4950 2    50   Input ~ 0
+EN
 Text HLabel 4550 3250 0    50   Input ~ 0
 SWDIO
 Text HLabel 4550 3350 0    50   Input ~ 0
@@ -458,4 +458,8 @@ F 3 "" H 2500 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2500 4350 2500 4400
+Wire Wire Line
+	6000 4850 6400 4850
+Text HLabel 6400 4850 2    50   Input ~ 0
+CLK
 $EndSCHEMATC

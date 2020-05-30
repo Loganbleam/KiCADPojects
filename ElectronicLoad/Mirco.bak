@@ -92,7 +92,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 4750 6400 4750
 Wire Wire Line
-	6000 5050 6400 5050
+	6000 4950 6400 4950
 $Comp
 L Device:C C?
 U 1 1 5EDE33B4
@@ -195,9 +195,9 @@ Text HLabel 6400 4450 2    50   Input ~ 0
 Text HLabel 6400 4650 2    50   Input ~ 0
 MISO
 Text HLabel 6400 4750 2    50   Input ~ 0
-SCL
-Text HLabel 6400 5050 2    50   Input ~ 0
-SDA
+Data
+Text HLabel 6400 4950 2    50   Input ~ 0
+EN
 Text HLabel 4550 3250 0    50   Input ~ 0
 SWDIO
 Text HLabel 4550 3350 0    50   Input ~ 0
@@ -422,10 +422,10 @@ Wire Wire Line
 Text HLabel 6400 4050 2    50   Input ~ 0
 ADC_in0
 $Comp
-L Device:Crystal_GND24 Y?
+L Device:Crystal_GND24 Y1
 U 1 1 5EBEB20B
 P 2500 4150
-F 0 "Y?" H 2694 4196 50  0000 L CNN
+F 0 "Y1" H 2694 4196 50  0000 L CNN
 F 1 "Crystal_GND24" H 2694 4105 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 2500 4150 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/NDK%20PDFs/NX3225SA.pdf" H 2500 4150 50  0001 C CNN
@@ -433,10 +433,10 @@ F 3 "https://media.digikey.com/pdf/Data%20Sheets/NDK%20PDFs/NX3225SA.pdf" H 2500
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0153
 U 1 1 5EBEEB8E
 P 2500 3875
-F 0 "#PWR?" H 2500 3625 50  0001 C CNN
+F 0 "#PWR0153" H 2500 3625 50  0001 C CNN
 F 1 "GND" H 2505 3702 50  0000 C CNN
 F 2 "" H 2500 3875 50  0001 C CNN
 F 3 "" H 2500 3875 50  0001 C CNN
@@ -446,10 +446,10 @@ $EndComp
 Wire Wire Line
 	2500 3875 2500 3950
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0154
 U 1 1 5EBF06C4
 P 2500 4400
-F 0 "#PWR?" H 2500 4150 50  0001 C CNN
+F 0 "#PWR0154" H 2500 4150 50  0001 C CNN
 F 1 "GND" H 2505 4227 50  0000 C CNN
 F 2 "" H 2500 4400 50  0001 C CNN
 F 3 "" H 2500 4400 50  0001 C CNN
@@ -458,4 +458,8 @@ F 3 "" H 2500 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2500 4350 2500 4400
+Wire Wire Line
+	6000 4850 6400 4850
+Text HLabel 6400 4850 2    50   Input ~ 0
+CLK
 $EndSCHEMATC

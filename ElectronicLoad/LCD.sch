@@ -14,31 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector:Conn_01x04_Female J?
-U 1 1 8AA242F7
-P 5400 3700
-AR Path="/8AA242F7" Ref="J?"  Part="1" 
-AR Path="/8AA216F7/8AA242F7" Ref="J6"  Part="1" 
-F 0 "J6" H 5428 3676 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 5428 3585 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5400 3700 50  0001 C CNN
-F 3 "~" H 5400 3700 50  0001 C CNN
-	1    5400 3700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5600 3500 5750 3500
-Wire Wire Line
-	5750 3500 5750 3275
-Wire Wire Line
-	5600 3600 5850 3600
-Wire Wire Line
-	5850 3600 5850 3375
-Wire Wire Line
-	5850 3375 6250 3375
-Wire Wire Line
-	5750 3275 6250 3275
 Text GLabel 1025 1175 0    50   Input ~ 0
 3V3
 $Comp
@@ -76,73 +51,296 @@ Wire Wire Line
 Wire Wire Line
 	1200 1325 1200 1350
 $Comp
-L power:+3V3 #PWR?
-U 1 1 8AA255B3
-P 6250 3275
-AR Path="/8AA255B3" Ref="#PWR?"  Part="1" 
-AR Path="/8AA216F7/8AA255B3" Ref="#PWR0147"  Part="1" 
-F 0 "#PWR0147" H 6250 3125 50  0001 C CNN
-F 1 "+3V3" H 6265 3448 50  0000 C CNN
-F 2 "" H 6250 3275 50  0001 C CNN
-F 3 "" H 6250 3275 50  0001 C CNN
-	1    6250 3275
-	1    0    0    -1  
+L Display_Character:WC1602A DS1
+U 1 1 5ECCF277
+P 5025 2500
+F 0 "DS1" H 5025 3481 50  0000 C CNN
+F 1 "WC1602A" H 5025 3390 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 5025 1600 50  0001 C CIN
+F 3 "http://www.wincomlcd.com/pdf/WC1602A-SFYLYHTC06.pdf" H 5725 2500 50  0001 C CNN
+	1    5025 2500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5950 2700 5425 2700
+$Comp
+L Device:R_POT RV1
+U 1 1 5ECE03C5
+P 6250 2975
+F 0 "RV1" H 6180 2929 50  0000 R CNN
+F 1 "R_POT" H 6180 3020 50  0000 R CNN
+F 2 "Logan:Potentiometer_Bourns_TC33X-2" H 6250 2975 50  0001 C CNN
+F 3 "~" H 6250 2975 50  0001 C CNN
+	1    6250 2975
+	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 8AA25B01
-P 6250 3375
-AR Path="/8AA25B01" Ref="#PWR?"  Part="1" 
-AR Path="/8AA216F7/8AA25B01" Ref="#PWR0148"  Part="1" 
-F 0 "#PWR0148" H 6250 3125 50  0001 C CNN
-F 1 "GND" H 6255 3202 50  0000 C CNN
-F 2 "" H 6250 3375 50  0001 C CNN
-F 3 "" H 6250 3375 50  0001 C CNN
-	1    6250 3375
+L power:GND #PWR0147
+U 1 1 5ECE93C2
+P 5200 1475
+F 0 "#PWR0147" H 5200 1225 50  0001 C CNN
+F 1 "GND" H 5205 1302 50  0000 C CNN
+F 2 "" H 5200 1475 50  0001 C CNN
+F 3 "" H 5200 1475 50  0001 C CNN
+	1    5200 1475
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 3700 5950 3700
+	5200 1475 5200 1325
 Wire Wire Line
-	5600 3800 5950 3800
-Text HLabel 5950 3700 2    50   Input ~ 0
-SCL
-Text HLabel 5950 3800 2    50   Input ~ 0
-SDA
-Text HLabel 6150 4850 3    50   Input ~ 0
-SCL
-Text HLabel 6050 4850 3    50   Input ~ 0
-SDA
+	5200 1325 5025 1325
 Wire Wire Line
-	6150 4325 6150 4850
-Wire Wire Line
-	6050 4325 6050 4850
+	5025 1325 5025 1700
 $Comp
-L Connector:TestPoint TP?
-U 1 1 5EBC5F6B
-P 6150 4325
-AR Path="/5EC9D17E/5EBC5F6B" Ref="TP?"  Part="1" 
-AR Path="/5EDE0641/5EBC5F6B" Ref="TP?"  Part="1" 
-AR Path="/8AA216F7/5EBC5F6B" Ref="TP15"  Part="1" 
-F 0 "TP15" H 6208 4443 50  0000 L CNN
-F 1 "TestPoint" H 6208 4352 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6350 4325 50  0001 C CNN
-F 3 "~" H 6350 4325 50  0001 C CNN
-	1    6150 4325
+L Device:R R11
+U 1 1 5ECEB2B1
+P 5700 3150
+F 0 "R11" H 5770 3196 50  0000 L CNN
+F 1 "220" H 5770 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5630 3150 50  0001 C CNN
+F 3 "~" H 5700 3150 50  0001 C CNN
+	1    5700 3150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5425 2800 5700 2800
+Wire Wire Line
+	5700 2800 5700 3000
+Wire Wire Line
+	5700 3300 5700 3675
+Wire Wire Line
+	5025 3300 5025 3675
+Text GLabel 1050 1825 0    50   Input ~ 0
++5V
 $Comp
-L Connector:TestPoint TP?
-U 1 1 5EBC6414
-P 6050 4325
-AR Path="/5EC9D17E/5EBC6414" Ref="TP?"  Part="1" 
-AR Path="/5EDE0641/5EBC6414" Ref="TP?"  Part="1" 
-AR Path="/8AA216F7/5EBC6414" Ref="TP14"  Part="1" 
-F 0 "TP14" H 6108 4443 50  0000 L CNN
-F 1 "TestPoint" H 6108 4352 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6250 4325 50  0001 C CNN
-F 3 "~" H 6250 4325 50  0001 C CNN
-	1    6050 4325
-	-1   0    0    -1  
+L power:+5V #PWR?
+U 1 1 5ECF0001
+P 1200 1825
+AR Path="/5EC9D17E/5ECF0001" Ref="#PWR?"  Part="1" 
+AR Path="/8AA216F7/5ECF0001" Ref="#PWR0148"  Part="1" 
+F 0 "#PWR0148" H 1200 1675 50  0001 C CNN
+F 1 "+5V" H 1215 1998 50  0000 C CNN
+F 2 "" H 1200 1825 50  0001 C CNN
+F 3 "" H 1200 1825 50  0001 C CNN
+	1    1200 1825
+	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1200 1825 1050 1825
+$Comp
+L power:+5V #PWR?
+U 1 1 5ECF0FBE
+P 5350 3750
+AR Path="/5EC9D17E/5ECF0FBE" Ref="#PWR?"  Part="1" 
+AR Path="/8AA216F7/5ECF0FBE" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR0155" H 5350 3600 50  0001 C CNN
+F 1 "+5V" H 5365 3923 50  0000 C CNN
+F 2 "" H 5350 3750 50  0001 C CNN
+F 3 "" H 5350 3750 50  0001 C CNN
+	1    5350 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5425 3100 5500 3100
+Wire Wire Line
+	5500 3100 5500 2975
+Wire Wire Line
+	5500 2975 6100 2975
+Wire Wire Line
+	6250 2825 6250 1325
+Wire Wire Line
+	6250 1325 5200 1325
+Connection ~ 5200 1325
+Wire Wire Line
+	6250 3125 6250 3675
+Wire Wire Line
+	6250 3675 5700 3675
+Connection ~ 5700 3675
+$Comp
+L power:GND #PWR0156
+U 1 1 5ECF7AC3
+P 5950 2700
+F 0 "#PWR0156" H 5950 2450 50  0001 C CNN
+F 1 "GND" H 5955 2527 50  0000 C CNN
+F 2 "" H 5950 2700 50  0001 C CNN
+F 3 "" H 5950 2700 50  0001 C CNN
+	1    5950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 3675 5350 3675
+Wire Wire Line
+	5350 3675 5350 3750
+Connection ~ 5350 3675
+Wire Wire Line
+	5350 3675 5700 3675
+$Comp
+L power:GND #PWR0157
+U 1 1 5ECF9C05
+P 4275 3275
+F 0 "#PWR0157" H 4275 3025 50  0001 C CNN
+F 1 "GND" H 4280 3102 50  0000 C CNN
+F 2 "" H 4275 3275 50  0001 C CNN
+F 3 "" H 4275 3275 50  0001 C CNN
+	1    4275 3275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 3000 4275 3000
+Wire Wire Line
+	4275 3000 4275 3275
+Wire Wire Line
+	4625 3100 4475 3100
+Wire Wire Line
+	4475 3100 4475 3275
+Wire Wire Line
+	4625 2900 4250 2900
+Wire Wire Line
+	4250 2900 4250 2300
+Wire Wire Line
+	2625 2500 2400 2500
+Wire Wire Line
+	2400 2500 2400 3075
+Wire Wire Line
+	2400 3075 3025 3075
+Wire Wire Line
+	3025 3075 3025 3000
+$Comp
+L power:GND #PWR0158
+U 1 1 5ECFF242
+P 3025 3175
+F 0 "#PWR0158" H 3025 2925 50  0001 C CNN
+F 1 "GND" H 3030 3002 50  0000 C CNN
+F 2 "" H 3025 3175 50  0001 C CNN
+F 3 "" H 3025 3175 50  0001 C CNN
+	1    3025 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3025 3075 3025 3175
+Connection ~ 3025 3075
+$Comp
+L power:GND #PWR0159
+U 1 1 5ED0110A
+P 4500 2650
+F 0 "#PWR0159" H 4500 2400 50  0001 C CNN
+F 1 "GND" H 4505 2477 50  0000 C CNN
+F 2 "" H 4500 2650 50  0001 C CNN
+F 3 "" H 4500 2650 50  0001 C CNN
+	1    4500 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 2300 4500 2300
+Wire Wire Line
+	4500 2300 4500 2400
+Wire Wire Line
+	4625 2400 4500 2400
+Connection ~ 4500 2400
+Wire Wire Line
+	4500 2400 4500 2500
+Wire Wire Line
+	4625 2500 4500 2500
+Connection ~ 4500 2500
+Wire Wire Line
+	4500 2500 4500 2600
+Wire Wire Line
+	4625 2600 4500 2600
+Connection ~ 4500 2600
+Wire Wire Line
+	4500 2600 4500 2650
+$Comp
+L Logan:74HC595D U7
+U 1 1 5ED08E09
+P 3025 2300
+F 0 "U7" H 3025 3081 50  0000 C CNN
+F 1 "74HC595D" H 3025 2990 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 3025 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 3025 2300 50  0001 C CNN
+	1    3025 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2625 2100 2175 2100
+Wire Wire Line
+	2175 2100 2175 2250
+Wire Wire Line
+	2175 2400 2625 2400
+Connection ~ 2175 2250
+Wire Wire Line
+	2175 2250 2175 2400
+$Comp
+L power:+5V #PWR0160
+U 1 1 5ED0E96C
+P 2500 2200
+F 0 "#PWR0160" H 2500 2050 50  0001 C CNN
+F 1 "+5V" V 2515 2328 50  0000 L CNN
+F 2 "" H 2500 2200 50  0001 C CNN
+F 3 "" H 2500 2200 50  0001 C CNN
+	1    2500 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2625 2200 2500 2200
+$Comp
+L power:+5V #PWR0161
+U 1 1 5ED1B3B5
+P 2725 1575
+F 0 "#PWR0161" H 2725 1425 50  0001 C CNN
+F 1 "+5V" V 2740 1703 50  0000 L CNN
+F 2 "" H 2725 1575 50  0001 C CNN
+F 3 "" H 2725 1575 50  0001 C CNN
+	1    2725 1575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3025 1700 3025 1625
+Wire Wire Line
+	2725 1625 2725 1575
+Wire Wire Line
+	2725 1625 3025 1625
+Text Label 3575 1900 0    50   ~ 0
+D4
+Text Label 3575 2000 0    50   ~ 0
+D5
+Text Label 3575 2100 0    50   ~ 0
+D6
+Text Label 3575 2200 0    50   ~ 0
+D7
+Wire Wire Line
+	4625 1900 4525 1900
+Wire Wire Line
+	4625 2000 4525 2000
+Wire Wire Line
+	4625 2100 4525 2100
+Wire Wire Line
+	4625 2200 4525 2200
+Wire Wire Line
+	3425 1900 3575 1900
+Wire Wire Line
+	3425 2000 3575 2000
+Wire Wire Line
+	3425 2100 3575 2100
+Wire Wire Line
+	3425 2200 3575 2200
+Wire Wire Line
+	3425 2300 4250 2300
+Text Label 4525 2200 2    50   ~ 0
+D4
+Text Label 4525 2100 2    50   ~ 0
+D5
+Text Label 4525 2000 2    50   ~ 0
+D6
+Text Label 4525 1900 2    50   ~ 0
+D7
+Wire Wire Line
+	2000 1900 2625 1900
+Wire Wire Line
+	2000 2250 2175 2250
+Text HLabel 2000 1900 0    50   Input ~ 0
+Data
+Text HLabel 2000 2250 0    50   Input ~ 0
+CLK
+Text HLabel 4475 3275 3    50   Input ~ 0
+EN
 $EndSCHEMATC
